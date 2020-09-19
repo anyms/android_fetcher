@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/file_size"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/fileSize"
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="0.0KB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/downloaded"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/downloaded"
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="0.0KB (0%)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/speed"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/speed"
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="0.0KB/s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/time_left"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/remainingTime"
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="0s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:paddingBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/resume_capability"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/resumeSupport"
+                    android:textColor="@color/colorContent"
+                    android:textSize="17sp"
+                    android:text="@string/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ProgressBar
+                android:max="100"
+                android:progress="0"
+                android:scaleY="4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/primaryProgressBar"/>
+
+        <TextView
+            android:textColor="@color/colorContent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="@string/start_positions_and_download_progress_by_connection"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:background="@color/colorLightGray"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread1" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread2" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread3" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread4" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread5" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread6" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread7" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread8" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread9" android:layout_weight="1"/>
+
+            <ProgressBar
+                    android:theme="@style/AppTheme.ThreadProgressBar"
+                    android:background="@color/colorLightGray"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thread10" android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuPause"
+        android:title="@string/pause"/>
+    <item
+        android:id="@+id/menuShowProgress"
+        android:title="@string/show_progress" />
+    <item
+        android:id="@+id/menuCopyUrl"
+        android:title="@string/copy_url" />
+</menu>

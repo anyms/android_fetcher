@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Fetcher",
+    "version": "1.0.1",
+    "description": "Internet download manager",
+    "icons": {
+        "128": "icon_128.png",
+        "48": "icon_48.png",
+        "16": "icon_16.png"
+    },
+    "background": {
+        "scripts": [
+            "detectors/audio_detector.js",
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"]
+        }
+    ],
+    "permissions": [
+        "<all_urls>",
+        "system.network"
+    ]
+}

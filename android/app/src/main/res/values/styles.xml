@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorSecondary</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+        <item name="android:textColorHint">#888</item>
+    </style>
+
+    <style name="AppTheme.Browser" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.OverFlow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_vert</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="AppTheme.ThreadProgressBar" parent="@style/Theme.AppCompat">
+        <item name="android:background">@drawable/thread_progress_border_right</item>
+        <item name="android:scaleY">5</item>
+        <item name="android:progress">0</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+</resources>

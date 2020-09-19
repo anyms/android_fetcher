@@ -1,0 +1,51 @@
+<resources>
+    <!-- Banner Ad IDs -->
+    <string name="banner_1">ca-app-pub-1517962596069817/9514273965</string>
+    <!-- Test ID -->
+<!--    <string name="banner_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="app_name">Fetcher</string>
+    <string name="file_icon">File icon</string>
+    <string name="email">contact@spidy.app</string>
+    <string name="explorer">Explorer</string>
+    <string name="downloading">Downloading</string>
+    <string name="failed">Failed</string>
+    <string name="paused">Paused</string>
+    <string name="completed">Completed</string>
+    <string name="start_positions_and_download_progress_by_connection">Start positions and download progress by connection</string>
+    <string name="new_download">New Download</string>
+    <string name="open_browser">Open Browser</string>
+    <string name="feedback">Feedback</string>
+    <string name="enter_a_url">Enter a URL</string>
+    <string name="open_in_browser_without_initial_check">Open in browser without initial check</string>
+    <string name="option_menu_icon">Option menu icon</string>
+    <string name="more_information_icon">More information icon</string>
+    <string name="play_pause_delete_icon">Play, pause, delete icon</string>
+    <string name="progress">Progress</string>
+    <string name="nothing_found">Empty 😃</string>
+    <string name="file_size">File Size</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="speed">Speed</string>
+    <string name="time_left">Time Left</string>
+    <string name="resume_capability">Resume Capability</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="number_of_thread_s_10">Number of Thread(s) • 10</string>
+    <string name="download_limit_for_every_cycle_4mb">Download Limit for Every Cycle • 4MB</string>
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="copy_url">Copy URL</string>
+    <string name="show_progress">Show Progress</string>
+    <string name="open">Open</string>
+    <string name="delete">Delete</string>
+    <string name="retry">Retry</string>
+    <string name="others">Others</string>
+    <string name="more_apps">More Apps</string>
+    <string name="report_issues">Report Issues</string>
+    <string name="share">Share…</string>
+
+    <string-array name="user_agents">
+        <item>Mobile</item>
+        <item>Desktop</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "963255218636",
+    "firebase_url": "https://fetcher-f304a.firebaseio.com",
+    "project_id": "fetcher-f304a",
+    "storage_bucket": "fetcher-f304a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963255218636:android:2e8544cbda4e30bc",
+        "android_client_info": {
+          "package_name": "app.spidy.fetcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963255218636-8k2n4cdklg20rr0i2svbj9nv40fq94p5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.spidy.fetcher",
+            "certificate_hash": "a68e11b88670452019287c667766d28365fe64c0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB615vMHKxs7Y1I5v8DjdFKKJSFiOTBcCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963255218636-42ehv9vm8oc5sss28l82sr2drio50f0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-1517962596069817~7710237708"
+    }
+  ],
+  "configuration_version": "1"
+}

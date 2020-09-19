@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/fileImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/file_icon"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_video_file" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fileNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Yaar intha devathai.mp4"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/fileUrlView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="https://google.com/videos/Yaar intha devathai.mp4"
+            android:textColor="@color/colorWhite50"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fileDownloadView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_dark_bg"
+        android:padding="8dp"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_download" />
+
+</LinearLayout>
